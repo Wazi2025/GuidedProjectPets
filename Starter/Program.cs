@@ -96,15 +96,18 @@ do
     //pause code execution
     readResult = Console.ReadLine();
 
+    //} while (menuSelection != "exit");
+
+    if (readResult != null)
+    {
+        menuSelection = readResult.ToLower();
+    }
+
+    Console.WriteLine($"You selected menu option {menuSelection}.");
+    Console.WriteLine("Press the Enter key to continue");
+
+    // pause code execution
+    readResult = Console.ReadLine();
+
 } while (menuSelection != "exit");
 
-if (readResult != null)
-{
-    menuSelection = readResult.ToLower();
-}
-
-Console.WriteLine($"You selected menu option {menuSelection}.");
-Console.WriteLine("Press the Enter key to continue");
-
-// pause code execution
-readResult = Console.ReadLine();
